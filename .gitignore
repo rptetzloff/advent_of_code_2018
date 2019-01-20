@@ -208,3 +208,4 @@ venv.bak/
 
 # Local
 files/*_input.txt
+.idea
