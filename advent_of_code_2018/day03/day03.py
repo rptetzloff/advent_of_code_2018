@@ -1,11 +1,3 @@
-"""
-The number of inches between the left edge of the fabric and the left edge
-of the rectangle.
-The number of inches between the top edge of the fabric and the top edge of
-the rectangle.
-The width of the rectangle in inches.
-The height of the rectangle in inches.
-"""
 import os
 import re
 from collections import Counter, namedtuple
