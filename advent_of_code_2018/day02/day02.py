@@ -4,7 +4,7 @@ from typing import List, Tuple
 from typing import Counter as CounterType
 
 
-def generate_data(input_file:str) -> List[str]:
+def generate_data(input_file: str) -> List[str]:
     """
     Generate list of data from input file
     :param input_file: (str) input file to parse
@@ -73,7 +73,7 @@ def generate_counter(data: List[str]) -> CounterType:
     return res
 
 
-def generate_checksum(counter: CounterType, multiples:Tuple[int] = (2, 3)) -> \
+def generate_checksum(counter: CounterType, multiples: Tuple[int] = (2, 3)) -> \
         int:
     """
     Generate the a simplistic checksum using a specified tuple of n-plicates. This
@@ -99,7 +99,7 @@ def generate_checksum(counter: CounterType, multiples:Tuple[int] = (2, 3)) -> \
     return checksum
 
 
-def day02a(input_file:str) -> str:
+def day02a(input_file: str) -> str:
     """
     Solver for day 2, part a of Advent of Code 2018.
     :param input_file: (str) File of the AoC inputs, a set of strings to parse
@@ -171,7 +171,6 @@ def generate_matches(data: List[str]) -> List[Tuple[str, str]]:
 
             # Check strength of match. If only a single difference, append to matches
             if count_string_differences(val, data[num]) == 1:
-
                 # Append a pair of matches to the list
                 matches.append((val, data[num]))
 
