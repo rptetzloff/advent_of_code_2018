@@ -19,7 +19,7 @@ def generate_data(input_file: str) -> List[int]:
     return data
 
 
-def calculate_frequency(data: List[int]):
+def calculate_frequency(data: List[int]) -> int:
     """
     Calculate final frequency after running through frequency changes in list
     :param data: List of ints
@@ -34,7 +34,7 @@ def calculate_frequency(data: List[int]):
         yield result
 
 
-def day01a(input_file):
+def day01a(input_file: str) -> int:
     """
     The solver for Day 1, part A.
     :param input_file: (str) The input file of data from Advent of Code
@@ -72,7 +72,7 @@ def is_duplicate(value: int, results: Set[int]) -> bool:
     return False
 
 
-def day01b(input_file):
+def day01b(input_file:str) -> int:
     """
     The solver for day 1, part B of Advent of Code 2018.
     :param input_file: (str) input file of data provided
